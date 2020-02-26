@@ -1,0 +1,42 @@
+{
+  "name": "API_SISTEMA_ALEXIS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "engines": {
+    "node": "10.16.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start-ts": "ts-node ./src/index.ts",
+    "postinstall": "npm run build",
+    "watch-node": "nodemon dist/index.js",
+    "watch-ts": "tsc -w",
+    "typeorm": "./node_modules/typeorm/cli.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^8.0.8",
+    "pg": "^7.18.1",
+    "typeorm": "^0.2.22",
+    "pm2": "^3.5.0",
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/jsonwebtoken": "^8.3.7",
+    "@types/koa": "^2.11.1",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.4.0",
+    "@types/node": "^13.7.1",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}

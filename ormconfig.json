@@ -1,0 +1,25 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "jcesarlp96",
+  "password": "",
+  "database": "jcesarlp96",
+  "synchronize": false,
+  "migrationsRun": true,
+  "logging": true,
+  "entities": [
+     "dist/system/entities/**/*.js"
+  ],
+  "migrations": [
+     "dist/system/database/migrations/**/*.js"
+  ],
+  "subscribers": [
+     "dist/subscriber/**/*.js"
+  ],
+  "cli": {
+     "entitiesDir": "src/system/entities",
+     "migrationsDir": "src/system/database/migrations",
+     "subscribersDir": "src/subscriber"
+  }
+}
