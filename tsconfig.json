@@ -6,6 +6,9 @@
         "moduleResolution": "node",
         "noImplicitAny": true,
         "outDir": "./dist",
+        "declaration": false,
+        "skipLibCheck": true,
+        "baseUrl": ".",
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true        
     },
